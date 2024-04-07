@@ -1,62 +1,56 @@
-#studen_database_chatbot
+## Student Database Chatbot
 
-This bot is built using tow diffrent LLMs
+This chatbot is built using two different language models:
 
-1-openAI 
+1. OpenAI's GPT-3.5 Turbo Instruct
+2. Google's GenerativeAI Gemini-Pro
 
-2-Googles Generativeai
+Both models are utilized for processing user queries and retrieving information from the database. However, Google GenerativeAI Gemini-Pro outperforms GPT-3.5 Turbo Instruct due to its more up-to-date capabilities.
 
-Both the models are working good for user text query to get information  from database.But  google generativeai gemini-pro is better the gpt-3.5-turbo-instruct  because gpt 3.5 is not uptodate 
+### Problem Statement
 
+The task is to create a chatbot that can provide analytical responses based on a database table of students' exam marks. The fields in the database include:
+- Student roll number
+- Name
+- Department
+- Subject
+- Mark
 
+There are only two departments: AI and Data Science. The chatbot should respond differently depending on the querying faculty's department:
+- AI faculty should only receive information about AI students.
+- Data Science faculty should only receive information about Data Science students.
+- Each faculty should not have access to data from the other department.
 
-#problem_satement
-Given a database table of students exam marks, create a chatbot which will answer analytical queries from the table.
+### Example Queries
 
-The fields are 
-(student roll number, name, department, subject, mark)
-
-There will be only two departments (AI, Data Science).
-
-The chatbot will be used by two faculties (one from AI department and another from Data Science).
-When AI faculty queries the chatbot, it should return information only about AI students.
-When Data Science faculty queries, it should answer only about Data Science students.
-AI faculty should not be able to see data from Data Science and vice versa.
-
-Create a single model which can do this.
-
-Example questions to chatbot will be like:
-
+Here are some example queries that the chatbot should be able to handle:
 1. How many students scored above 75%?
 2. How many are weak in subject X?
-3. Which two subjects have similarity in marks i.e. if a student does good in one subject they are also good in the other subject?
+3. Which two subjects have similarity in marks, i.e., if a student does well in one subject, they are also likely to do well in the other subject?
 
+### Requirements
 
-#Requirements
+The following technologies and libraries are required to run the chatbot:
+- Streamlit
+- OpenAI API
+- Google GenerativeAI
+- Python-dotenv
+- SQLite3
+- Python
 
- streamlit
+### Technologies Used
 
- openai api
+The chatbot is built using the following technologies:
+- Python
+- Streamlit
+- SQLite
+- OpenAI API
+- dotenv
 
- google-generativeai
- 
- python-dotenv
- 
- sqlite3
- 
- python
+---
 
-#Technologies 
+Feel free to reach out for any questions or concerns regarding the setup or functionality of the chatbot.
 
-Python
-
-Streamlit
-
-SQLite
-
-OpenAI API
-
-dotenv
 
 #WORKFLOW
 ![image](https://github.com/Abiles-V/Abiles-V-student_database_chatbot/assets/137181669/025b2db6-d6c7-4361-943a-110660eecbbd)
