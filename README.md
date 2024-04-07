@@ -28,6 +28,8 @@ Example questions to chatbot will be like:
  streamlit
 
  openai api
+
+ google-generativeai
  
  python-dotenv
  
