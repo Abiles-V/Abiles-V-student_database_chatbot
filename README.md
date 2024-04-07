@@ -1,9 +1,12 @@
 #studen_database_chatbot
+
 This bot is built using tow diffrent LLMs
+
 1-openAI 
+
 2-Googles Generativeai
-both the models are working good for user text query to get information  from database.
-but  google generativeai gemini-pro is better the gpt-3.5-turbo-instruct  because gpt 3.5 is not uptodate 
+
+Both the models are working good for user text query to get information  from database.But  google generativeai gemini-pro is better the gpt-3.5-turbo-instruct  because gpt 3.5 is not uptodate 
 
 
 
